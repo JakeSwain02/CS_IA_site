@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Notes Entered</title>
+    </head>
+    <body>
+      <form action="/calculation" method = 'get'>
+
+
+      </form>
+      <!-- <h1> -->
+      <h1>Notes Entered</h1>
+      <h1>(String, Fret)</h1>
+
+      <div class="event-list">
+        <ul>
+          {% for i in exact_notes %}
+            <li> {{ i}} </li>
+          {% endfor %}
+        </ul>
+
+        <a href="http://0.0.0.0:8080/deleteAll">Go Again</a>
+      </div>
+
+
+
+
+    </body>
+</html>

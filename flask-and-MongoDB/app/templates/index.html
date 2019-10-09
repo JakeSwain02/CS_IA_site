@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Optimal Notes</title>
+        <h1> (string,fret)
+    </head>
+    <body>
+      <form action="/results" method = 'get'>
+
+
+      </form>
+      <!-- <h1> -->
+      <h1>Notes Entered</h1>
+      <div class="event-list">
+        <ul>
+          {% for i in exact_notes %}
+            <li> {{ i.note }} </li>
+          {% endfor %}
+        </ul>
+        <a href="http://0.0.0.0:8080/input">Enter More Notes</a>
+        <a href="http://0.0.0.0:8080/show_results">Finish</a>
+        <a href="http://0.0.0.0:8080/deleteAll">Clear</a>
+
+      </div>
+
+
+
+
+    </body>
+</html>
